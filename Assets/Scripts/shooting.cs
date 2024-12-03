@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 using static PlayerController;
 
 public class ShootingController : MonoBehaviour
@@ -17,8 +17,8 @@ public class ShootingController : MonoBehaviour
     public PlayerController playerController;
 
     public int normalPlatformAmmo = 9;
-    public int jumpPadAmmo = 4;
-    public int speedBoostAmmo = 4;
+    public int jumpPadAmmo = 6;
+    public int speedBoostAmmo = 6;
 
     void Update()
     {
