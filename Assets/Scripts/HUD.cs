@@ -6,14 +6,17 @@ public class HUD : MonoBehaviour
 {
     public TextMeshProUGUI normalAmmoText;
     public TextMeshProUGUI jumpPadAmmoText;
+    public TextMeshProUGUI speedPadAmmoText;
 
     // Health Bar UI element
     public Slider healthBar;
 
-    private int normalAmmo = 9;
-    private int jumpPadAmmo = 4;
+    private int normalAmmo = 15;
+    private int jumpPadAmmo = 10;
+    private int speedPadAmmo = 10;
 
-    public enum PlatformType { Normal, JumpPad }
+
+    public enum PlatformType { Normal, JumpPad, SpeedPad }
     private PlatformType equippedPlatformType;
 
     void Start()
@@ -32,7 +35,9 @@ public class HUD : MonoBehaviour
         {
             EquipPlatform(PlatformType.JumpPad);
         }
-
+        else if (Input.GetKeyDown(KeyCode.R)){
+            EquipPlatform(PlatformType.SpeedPad);
+        }
         if (Input.GetMouseButtonDown(0))
         {
             UseAmmo();
@@ -55,6 +60,9 @@ public class HUD : MonoBehaviour
         {
             jumpPadAmmo--;
         }
+        else if (equippedPlatformType == PlatformType.SpeedPad && speedPadAmmo > 0){
+            speedPadAmmo--;
+        }
 
         UpdateAmmoHUD();
     }
@@ -63,16 +71,25 @@ public class HUD : MonoBehaviour
     {
         normalAmmoText.text = "Normal Bullets: " + normalAmmo;
         jumpPadAmmoText.text = "Jump Bullets: " + jumpPadAmmo;
+        speedPadAmmoText.text = "Speed Bullets: " + speedPadAmmo;
 
         if (equippedPlatformType == PlatformType.Normal)
         {
             normalAmmoText.fontStyle = FontStyles.Bold;
             jumpPadAmmoText.fontStyle = FontStyles.Normal;
+            speedPadAmmoText.fontStyle = FontStyles.Normal;
         }
         else if (equippedPlatformType == PlatformType.JumpPad)
         {
             normalAmmoText.fontStyle = FontStyles.Normal;
             jumpPadAmmoText.fontStyle = FontStyles.Bold;
+            speedPadAmmoText.fontStyle = FontStyles.Normal;
+        }
+        else if (equippedPlatformType == PlatformType.SpeedPad){
+            normalAmmoText.fontStyle = FontStyles.Normal;
+            jumpPadAmmoText.fontStyle = FontStyles.Normal;
+            speedPadAmmoText.fontStyle = FontStyles.Bold;
+
         }
     }
 
