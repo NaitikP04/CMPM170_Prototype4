@@ -4172,9 +4172,13 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 2587536544142447836, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
+      propertyPath: speedBoostPlatformPrefab
+      value: 
+      objectReference: {fileID: 5397292541150261324, guid: 933ed2b1ac537cf4bba57abe2e4f15dc, type: 3}
     - target: {fileID: 2900770830964931423, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -164.3
+      value: -111.5
       objectReference: {fileID: 0}
     - target: {fileID: 2900770830964931423, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4215,6 +4219,14 @@ PrefabInstance:
     - target: {fileID: 2996137339244959599, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
       propertyPath: moveSpeed
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996137339244959599, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
+      propertyPath: OGmoveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996137339244959599, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
+      propertyPath: equippedPlatformType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3643671849637539895, guid: 988f0e9bcc50aff4cb37155a152e2971, type: 3}
       propertyPath: m_Name

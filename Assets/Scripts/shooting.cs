@@ -9,6 +9,8 @@ public class ShootingController : MonoBehaviour
 
     public GameObject normalPlatformPrefab;
     public GameObject jumpPadPlatformPrefab;
+    public GameObject speedBoostPlatformPrefab;
+
     public GameObject chosenPlatform;
     public PlatformType platformName;
 
@@ -16,7 +18,8 @@ public class ShootingController : MonoBehaviour
 
     public int normalPlatformAmmo = 9;
     public int jumpPadAmmo = 4;
-    
+    public int speedBoostAmmo = 4;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -68,6 +71,9 @@ public class ShootingController : MonoBehaviour
             case PlayerController.PlatformType.jumpPad:
                 chosenPlatform = jumpPadPlatformPrefab;
                 break;
+            case PlayerController.PlatformType.speedBoost:
+                chosenPlatform = speedBoostPlatformPrefab;
+                break;
             default:
                 chosenPlatform = normalPlatformPrefab;
                 break;
@@ -80,6 +86,8 @@ public class ShootingController : MonoBehaviour
         {
             case PlatformType.jumpPad:
                 return jumpPadAmmo > 0;
+            case PlatformType.speedBoost:
+                return speedBoostAmmo > 0;
             case PlatformType.Normal:
                 return normalPlatformAmmo > 0;
             default:
@@ -93,6 +101,9 @@ public class ShootingController : MonoBehaviour
         {
             case PlatformType.jumpPad:
                 jumpPadAmmo--;
+                break;
+            case PlatformType.speedBoost:
+                speedBoostAmmo--;
                 break;
             case PlatformType.Normal:
                 normalPlatformAmmo--;
