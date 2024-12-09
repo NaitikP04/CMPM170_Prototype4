@@ -318,6 +318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -384,6 +388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1321,6 +1329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2201,6 +2213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2495,6 +2511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2756,6 +2776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4780,6 +4804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5140,6 +5168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 5135461535926350041, guid: 6f4d6dd052942e649a4da89792486042, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cc51873d56282843998ebc11577304d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
